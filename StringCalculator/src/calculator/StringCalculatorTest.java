@@ -25,8 +25,13 @@ public class StringCalculatorTest {
        assertEquals(1, stringCalculator.add("1"));
        assertEquals(calculator.add("5"), 5);
    }
+   @Test
+   public void numbersCommaDelimitedShouldBeSummed() {
+       assertEquals(calculator.add("1,2"), 3);
+       assertEquals(25, calculator.add("10,15"));
+   }
    
- 
+
   
 
 }
